@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Estudantil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav class="navbar">
+  <span class="navbar-brand">Portfólio</span>
+  <ul class="navbar-links">
+    <li><a href="#" class="nav-link active" data-page="home">Início</a></li>
+    <li><a href="#" class="nav-link" data-page="materias">Matérias</a></li>
+    <li><a href="#" class="nav-link" data-page="contato">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- ─── LANTERN DECORATION ─── -->
+<div class="lantern-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <!-- string rope -->
+    <path d="M0,14 Q150,24 300,14 Q450,4 600,14 Q750,24 900,14 Q1050,4 1200,14"
+          stroke="#70191D" stroke-width="2" fill="none" opacity=".7"/>
+
+    <!-- Lantern macro helper: each group is a lantern hanging from the rope -->
+    <!-- L1 -->
+    <g class="lantern-sway" transform="translate(90,14)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="10" rx="3" ry="2" fill="#FECD6D"/>
+      <rect x="-12" y="12" width="24" height="34" rx="12" fill="#970A12"/>
+      <rect x="-12" y="12" width="24" height="34" rx="12" fill="url(#lg1)" opacity=".5"/>
+      <ellipse cx="0" cy="12" rx="10" ry="4" fill="#D1601F"/>
+      <ellipse cx="0" cy="46" rx="10" ry="4" fill="#D1601F"/>
+      <line x1="0" y1="46" x2="0" y2="52" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="52" rx="5" ry="2" fill="#FECD6D"/>
+      <!-- glow -->
+      <ellipse class="lantern-glow" cx="0" cy="29" rx="9" ry="14" fill="#FECD6D"/>
+      <!-- stripes -->
+      <line x1="-8" y1="22" x2="8" y2="22" stroke="#FECD6D" stroke-width=".7" opacity=".4"/>
+      <line x1="-10" y1="29" x2="10" y2="29" stroke="#FECD6D" stroke-width=".7" opacity=".4"/>
+      <line x1="-8" y1="36" x2="8" y2="36" stroke="#FECD6D" stroke-width=".7" opacity=".4"/>
+    </g>
+
+    <!-- L2 -->
+    <g class="lantern-sway" transform="translate(230,10)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="10" rx="3" ry="2" fill="#FECD6D"/>
+      <rect x="-14" y="12" width="28" height="40" rx="14" fill="#D1601F"/>
+      <rect x="-14" y="12" width="28" height="40" rx="14" fill="url(#lg2)" opacity=".4"/>
+      <ellipse cx="0" cy="12" rx="12" ry="5" fill="#970A12"/>
+      <ellipse cx="0" cy="52" rx="12" ry="5" fill="#970A12"/>
+      <line x1="0" y1="52" x2="0" y2="60" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="60" rx="6" ry="2.5" fill="#FECD6D"/>
+      <ellipse class="lantern-glow" cx="0" cy="32" rx="11" ry="16" fill="#FECD6D"/>
+      <line x1="-10" y1="24" x2="10" y2="24" stroke="#fff" stroke-width=".6" opacity=".3"/>
+      <line x1="-12" y1="32" x2="12" y2="32" stroke="#fff" stroke-width=".6" opacity=".3"/>
+      <line x1="-10" y1="40" x2="10" y2="40" stroke="#fff" stroke-width=".6" opacity=".3"/>
+    </g>
+
+    <!-- L3 -->
+    <g class="lantern-sway" transform="translate(390,16)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="8" rx="2.5" ry="1.8" fill="#FECD6D"/>
+      <rect x="-10" y="10" width="20" height="28" rx="10" fill="#5686BB"/>
+      <ellipse cx="0" cy="10" rx="8" ry="3.5" fill="#3D5D91" opacity=".9"/>
+      <ellipse cx="0" cy="38" rx="8" ry="3.5" fill="#3D5D91" opacity=".9"/>
+      <line x1="0" y1="38" x2="0" y2="45" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="45" rx="4" ry="1.8" fill="#FECD6D"/>
+      <ellipse class="lantern-glow" cx="0" cy="24" rx="8" ry="12" fill="#FECD6D"/>
+    </g>
+
+    <!-- L4 -->
+    <g class="lantern-sway" transform="translate(530,12)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="10" rx="3" ry="2" fill="#FECD6D"/>
+      <rect x="-13" y="12" width="26" height="36" rx="13" fill="#70191D"/>
+      <ellipse cx="0" cy="12" rx="11" ry="4.5" fill="#970A12"/>
+      <ellipse cx="0" cy="48" rx="11" ry="4.5" fill="#970A12"/>
+      <line x1="0" y1="48" x2="0" y2="56" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="56" rx="5.5" ry="2.2" fill="#FECD6D"/>
+      <ellipse class="lantern-glow" cx="0" cy="30" rx="10" ry="15" fill="#FECD6D"/>
+      <line x1="-9" y1="22" x2="9" y2="22" stroke="#FECD6D" stroke-width=".8" opacity=".5"/>
+      <line x1="-11" y1="30" x2="11" y2="30" stroke="#FECD6D" stroke-width=".8" opacity=".5"/>
+      <line x1="-9" y1="38" x2="9" y2="38" stroke="#FECD6D" stroke-width=".8" opacity=".5"/>
+    </g>
+
+    <!-- L5 -->
+    <g class="lantern-sway" transform="translate(680,8)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="12" rx="3" ry="2" fill="#FECD6D"/>
+      <rect x="-15" y="14" width="30" height="44" rx="15" fill="#D1601F"/>
+      <ellipse cx="0" cy="14" rx="13" ry="5.5" fill="#970A12"/>
+      <ellipse cx="0" cy="58" rx="13" ry="5.5" fill="#970A12"/>
+      <line x1="0" y1="58" x2="0" y2="66" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="66" rx="6" ry="2.5" fill="#FECD6D"/>
+      <ellipse class="lantern-glow" cx="0" cy="36" rx="12" ry="18" fill="#FECD6D"/>
+    </g>
+
+    <!-- L6 -->
+    <g class="lantern-sway" transform="translate(840,14)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="9" rx="2.5" ry="1.8" fill="#FECD6D"/>
+      <rect x="-11" y="11" width="22" height="32" rx="11" fill="#5686BB"/>
+      <ellipse cx="0" cy="11" rx="9" ry="4" fill="#3D5D91"/>
+      <ellipse cx="0" cy="43" rx="9" ry="4" fill="#3D5D91"/>
+      <line x1="0" y1="43" x2="0" y2="50" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="50" rx="4.5" ry="2" fill="#FECD6D"/>
+      <ellipse class="lantern-glow" cx="0" cy="27" rx="9" ry="13" fill="#FECD6D"/>
+    </g>
+
+    <!-- L7 -->
+    <g class="lantern-sway" transform="translate(1000,11)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="10" rx="3" ry="2" fill="#FECD6D"/>
+      <rect x="-12" y="12" width="24" height="34" rx="12" fill="#970A12"/>
+      <ellipse cx="0" cy="12" rx="10" ry="4" fill="#70191D"/>
+      <ellipse cx="0" cy="46" rx="10" ry="4" fill="#70191D"/>
+      <line x1="0" y1="46" x2="0" y2="54" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="54" rx="5" ry="2" fill="#FECD6D"/>
+      <ellipse class="lantern-glow" cx="0" cy="29" rx="9" ry="14" fill="#FECD6D"/>
+      <line x1="-8" y1="22" x2="8" y2="22" stroke="#FECD6D" stroke-width=".7" opacity=".5"/>
+      <line x1="-10" y1="29" x2="10" y2="29" stroke="#FECD6D" stroke-width=".7" opacity=".5"/>
+      <line x1="-8" y1="36" x2="8" y2="36" stroke="#FECD6D" stroke-width=".7" opacity=".5"/>
+    </g>
+
+    <!-- L8 -->
+    <g class="lantern-sway" transform="translate(1130,15)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="9" rx="2.5" ry="1.8" fill="#FECD6D"/>
+      <rect x="-10" y="11" width="20" height="28" rx="10" fill="#D1601F"/>
+      <ellipse cx="0" cy="11" rx="8" ry="3.5" fill="#970A12"/>
+      <ellipse cx="0" cy="39" rx="8" ry="3.5" fill="#970A12"/>
+      <line x1="0" y1="39" x2="0" y2="46" stroke="#70191D" stroke-width="1.5"/>
+      <ellipse cx="0" cy="46" rx="4" ry="1.8" fill="#FECD6D"/>
+      <ellipse class="lantern-glow" cx="0" cy="25" rx="8" ry="12" fill="#FECD6D"/>
+    </g>
+
+    <!-- gradient defs for glow -->
+    <defs>
+      <radialGradient id="lg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FECD6D" stop-opacity=".6"/>
+        <stop offset="100%" stop-color="#FECD6D" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="lg2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FECD6D" stop-opacity=".5"/>
+        <stop offset="100%" stop-color="#FECD6D" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+  </svg>
+</div>
+
+<!-- ═══ PAGE: HOME ═══ -->
+<div class="page active" id="page-home">
+<header>
+  <label for="photo-input">
+    <div class="photo-ring" title="Clique para adicionar foto">
+      <div class="photo-placeholder" id="photo-placeholder">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span>Adicionar foto</span>
+      </div>
+      <img id="profile-img" src="" alt="Foto de perfil" style="display:none"/>
+    </div>
+  </label>
+  <input type="file" id="photo-input" accept="image/*"/>
+
+  <h1 class="hero-name" contenteditable="true" spellcheck="false">Seu Nome Aqui</h1>
+  <span class="hero-tag" contenteditable="true" spellcheck="false">Estudante do Ensino Médio</span>
+  <p class="hero-bio" contenteditable="true" spellcheck="false">
+    Olá! Aqui você pode escrever uma breve descrição sobre você, seus interesses e objetivos acadêmicos. Clique para editar este texto.
+  </p>
+</header>
+
+<!-- ─── LIFE CAROUSEL ─── -->
+<div class="life-section">
+  <div class="life-track-wrap">
+    <button class="life-btn life-prev" id="life-prev" aria-label="Anterior">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+
+    <div class="life-track" id="life-track">
+      <div class="life-slide"><img src="foto1.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto2.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto3.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto4.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto5.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto6.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto7.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto8.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto9.jpg"  alt="life"/></div>
+      <div class="life-slide"><img src="foto10.jpg" alt="life"/></div>
+      <div class="life-slide"><img src="foto11.jpg" alt="life"/></div>
+      <div class="life-slide"><img src="foto12.jpg" alt="life"/></div>
+      <div class="life-slide"><img src="foto13.jpg" alt="life"/></div>
+      <div class="life-slide"><img src="foto14.jpg" alt="life"/></div>
+    </div>
+
+    <button class="life-btn life-next" id="life-next" aria-label="Próximo">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="life-dots" id="life-dots">
+    <!-- injected by JS -->
+  </div>
+  <p class="life-caption">life</p>
+</div>
+</div><!-- end page-home -->
+
+<!-- ═══ PAGE: MATÉRIAS ═══ -->
+<div class="page" id="page-materias">
+<h2 class="section-title">Minhas Matérias</h2>
+<p class="section-subtitle">Clique nas pastas para explorar as atividades</p>
+<div class="folders-grid" id="folders-grid">
+  <!-- Folders injected by JS -->
+</div>
+</div><!-- end page-materias -->
+
+<!-- ═══ PAGE: CONTATO ═══ -->
+<div class="page" id="page-contato">
+  <div class="contact-page">
+    <h2>Contato</h2>
+    <p class="contact-subtitle">Fique à vontade para me chamar por qualquer canal 🌿</p>
+    <div class="contact-cards">
+
+      <a class="contact-card" href="https://wa.me/5548999999999" target="_blank">
+        <div class="contact-icon whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="contact-info">
+          <strong>WhatsApp</strong>
+          <span contenteditable="true" spellcheck="false">(48) 9 9999-9999</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+      </a>
+
+      <a class="contact-card" href="https://instagram.com/seu_usuario" target="_blank">
+        <div class="contact-icon instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="contact-info">
+          <strong>Instagram</strong>
+          <span contenteditable="true" spellcheck="false">@seu_usuario</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+      </a>
+
+      <a class="contact-card" href="mailto:yasmim_v_santana@estudante.sesisenai.org.br">
+        <div class="contact-icon email">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="contact-info">
+          <strong>E-mail</strong>
+          <span>yasmim_v_santana@estudante.sesisenai.org.br</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+      </a>
+
+    </div>
+  </div>
+</div><!-- end page-contato -->
+
+<!-- ─── ADD ACTIVITY MODAL ─── -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <button class="modal-close" id="modal-close">×</button>
+    <h3>Nova Atividade</h3>
+    <label>Título da Atividade</label>
+    <input type="text" id="modal-title" placeholder="Ex: Trabalho sobre Álgebra"/>
+    <label>Descrição</label>
+    <textarea id="modal-desc" placeholder="Descreva brevemente a atividade…"></textarea>
+    <div class="modal-btns">
+      <button class="btn-cancel" id="modal-cancel">Cancelar</button>
+      <button class="btn-save" id="modal-save">Adicionar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer class="site-footer">
+  <div>Portfólio Estudantil 🌿</div>
+  <div class="footer-divider"></div>
+  <div>
+    <a href="mailto:yasmim_v_santana@estudante.sesisenai.org.br">
+      yasmim_v_santana@estudante.sesisenai.org.br
+    </a>
+  </div>
+  <div class="footer-copy">© 2025 · Todos os direitos reservados</div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
